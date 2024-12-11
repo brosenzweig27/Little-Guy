@@ -12,13 +12,15 @@ with source_data as (
 
     select 1 as id
     union all
-    " + "
-    union all
-    ".join([f"select {i} as id" for i in __import__('random').sample(range(1, 101), 100)]) + "
+    {% for i in range(1, 101) %}
+    select {{ i }} as id
+    {% if not loop.last %} union all {% endif %}
+    {% endfor %}
 )
 
 select *
 from source_data
+
 
 /*
     Uncomment the line below to remove records with null `id` values
