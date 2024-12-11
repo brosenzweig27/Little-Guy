@@ -1,0 +1,14 @@
+version: "1"
+context:
+  active-host: "ux326.us1.dbt.com"
+  active-project: "70403103976422"
+projects:
+  - project-name: "Little Guy"
+    project-id: "70403103976422"
+    account-name: "little guy"
+    account-id: "70403103964345"
+    account-host: "ux326.us1.dbt.com"
+    token-name: "cloud-cli-5e55"
+    token-value: "dbtu_ix7KVlQc1kpw2m3e7I-SF8EfaGCTQrhgedmZyG0M0Hj2UoDMqE"
+
+

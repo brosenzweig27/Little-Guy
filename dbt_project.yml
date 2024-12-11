@@ -9,6 +9,10 @@ config-version: 2
 # This setting configures which "profile" dbt uses for this project.
 profile: 'default'
 
+# Add a dbt-cloud section, with the project id of the dbt Cloud Project I'd like to use
+dbt-cloud:
+  project-id: 70403103976422
+
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
 # found in the "models/" directory. You probably won't need to change these!
