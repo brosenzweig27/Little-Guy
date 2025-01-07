@@ -10,3 +10,4 @@ with mods as (
 select *
 from mods
 where mod3 = 0
+order by id, mod7
